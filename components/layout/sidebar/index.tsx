@@ -25,15 +25,15 @@ const Sidebar = ({ isOpen, toggleSidebar }: SidebarType) => {
       <AnimatePresence>
         {isOpen && (
           <>
-            <motion.div
+            {/* <motion.div
               className="fixed inset-0 bg-bg2 bg-opacity-50 z-40 lg:hidden"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={toggleSidebar}
-            />
+            /> */}
             <motion.div
-              className="fixed top-0 left-0 h-full flex flex-col justify-between bg-bg2 z-50 lg:hidden"
+              className="fixed inset-y-0 flex flex-col justify-between p-2 left-0 bg-white shadow-lg w-[60%] h-full z-50 md:hidden"
               variants={drawerVariants}
               initial="closed"
               animate="open"

@@ -3,6 +3,7 @@ import { AiOutlineMenu } from 'react-icons/ai';
 import { IoClose } from 'react-icons/io5';
 import { motion } from 'framer-motion';
 import { useWindowSize } from 'react-use';
+import SearchInput from '@/components/utitlies/custominput';
 
 type HeaderProps = {
     toggleDrawer: () => void;
@@ -23,15 +24,16 @@ const Header = ({ toggleDrawer, isSidebarOpen }: HeaderProps) => {
 
     return (
         <motion.header
-            className="fixed top-0 w-full h-16 bg-bg2 text-white flex items-center px-4 z-30"
+            className="fixed top-0 w-full h-16 bg-bg2 text-white flex items-center  px-4 z-30"
             initial={{ x: '-100%' }}
             animate={{ x: getHeaderPosition() }}
             transition={{ type: 'spring', stiffness: 200, damping: 20 }}
         >
-            <button className="lg:hidden p-4 text-white focus:outline-none" onClick={toggleDrawer}>
-                {isSidebarOpen ? <IoClose /> : <AiOutlineMenu />}
-            </button>
-            <h1 className="text-2xl font-bold ml-4">Header</h1>
+            <div className={`${isSidebarOpen ? "md:w-[82%]":"md:w-[93%]"} w-full flex justify-between items-center`}>
+                <div className='font-bold text-xl leading-5 font-circular text-black'>Good morning, <span className='font-medium text-lightgreen'>John 👋</span></div>
+
+                <SearchInput value="" onChange={() => { }} />
+            </div>
         </motion.header>
     );
 };

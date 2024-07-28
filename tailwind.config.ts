@@ -22,7 +22,10 @@ const config: Config = {
         lightblack:"#27303F",
         lighterblack:"#27303F",
         lightgreen:"#A0AEC0",
-        lightergreen:"#718096"
+        lightergreen:"#718096",
+        bgred:"#BF3594",
+        textBlack:"#3F4254",
+        lightierBlack:"#1A202C"
       },
       fontSize: {
         'f32': '32px',
