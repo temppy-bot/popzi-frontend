@@ -25,7 +25,9 @@ const config: Config = {
         lightergreen:"#718096",
         bgred:"#BF3594",
         textBlack:"#3F4254",
-        lightierBlack:"#1A202C"
+        lightierBlack:"#1A202C",
+        lightgrey:"#F4F7FA",
+        bgblue:"#2F7DF3"
       },
       fontSize: {
         'f32': '32px',

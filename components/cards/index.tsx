@@ -20,7 +20,7 @@ const Cards: React.FC<CardProps> = ({ date, imageUrl, fileName }) => {
                     src={imageUrl}
                     alt={fileName}
                     layout="fill"
-                    objectFit="cover"
+                    // objectFit="cover"
                     className="rounded-lg"
                 />
             </div>
@@ -31,7 +31,7 @@ const Cards: React.FC<CardProps> = ({ date, imageUrl, fileName }) => {
                     alt="Toggle Sidebar"
                     width={20}
                     height={20}
-                    objectFit='contain'
+                    // objectFit='contain'
                 />
             </div>
         </div>

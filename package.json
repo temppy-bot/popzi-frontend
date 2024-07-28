@@ -10,6 +10,9 @@
   },
   "dependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tiptap/extension-text-align": "^2.5.7",
+    "@tiptap/extension-text-style": "^2.5.7",
+    "@tiptap/extension-underline": "^2.5.7",
     "@tiptap/pm": "^2.5.7",
     "@tiptap/react": "^2.5.7",
     "@tiptap/starter-kit": "^2.5.7",
